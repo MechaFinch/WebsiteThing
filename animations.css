@@ -1,0 +1,56 @@
+body {
+	background: lightblue;
+}
+
+.rb1 {
+	background: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet, mediumvioletred);
+	background-size: 200%;
+	background-clip: text;
+	animation: rb1Animation 2s linear infinite;
+	-webkit-background-clip: text;
+	-webkit-animation: rb1Animation linear 2s infinite;
+	color: transparent;
+}
+
+@-webkit-keyframes rb1Animation {
+	to {
+		background-position: 200% 100%;
+	}
+}
+
+@keyframes rb1Animation {
+	to {
+		background-position: 200% 100%;
+	}
+}
+
+.rb2 {
+	background: linear-gradient(to right, red, blue, blue, red);
+	background-size: 200%;
+	background-clip: text;
+	animation: rb2Animation 2s linear infinite;
+	-webkit-background-clip: text;
+	-webkit-animation: rb2Animation 2s linear infinite;
+	color: transparent;
+}
+
+.large {
+	font-size: 100px;
+}
+
+@-webkit-keyframes rb2Animation {
+	to {
+		background-position: 200% 100%;
+	}
+}
+
+@keyframes rb2Animation {
+	to {
+		background-position: 200% 100%;
+	}
+}
+
+.fast {
+	animation-duration: 0.5s;
+	-webkit-animation-duration: 0.5s;
+}
